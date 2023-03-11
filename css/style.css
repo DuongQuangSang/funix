@@ -1,0 +1,272 @@
+/* :root {} */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+p,
+span {
+    font-size: 1.4em;
+}
+
+h1 {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #0000ff;
+    grid-template-areas:
+        'goals goals team timeline'
+        'goals goals team timeline'
+        'goals goals team timeline'
+        'scopes scopes primary timeline'
+        'scopes scopes primary timeline';
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-container>* {
+    background-color: #f0f8ff;
+}
+
+.item1 {
+    grid-area: goals;
+}
+
+.item2 {
+    grid-area: team;
+}
+
+.item3 {
+    grid-area: timeline;
+}
+
+.item4 {
+    grid-area: scopes;
+}
+
+.item5 {
+    grid-area: primary;
+}
+
+.head {
+    padding: 30px 0 25px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #bfd0cc;
+    color: #0000ff;
+}
+
+/* Item1 */
+
+.item1 li {
+    display: flex;
+    margin: 0 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 25px;
+    font-size: 0.9rem;
+}
+
+.item1 li i {
+    flex: 1;
+    max-width: 128.6px;
+    padding-left: 34px;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.item1 li .content {
+    flex: 4;
+    padding-right: 40px;
+    font-size: 0.9rem;
+}
+
+/* Item2 */
+
+.item2 li {
+    display: flex;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.item2 li i {
+    flex: 1;
+    max-width: 73px;
+    padding: 0 12px;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.item2 li .content {
+    flex: 3;
+    padding-right: 40px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.item2 li h3 {
+    margin-bottom: 10px;
+}
+
+/* Item3 */
+
+.item3 li {
+    display: flex;
+    margin: 0 20px;
+    padding-top: 25px;
+    font-size: 0.9rem;
+}
+
+.item3 li i {
+    max-width: 128.6px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 2.8rem;
+}
+
+.item3 li .content {
+    flex: 4;
+    padding-right: 30px;
+    padding-left: 40px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Item4 */
+
+.item4 ul {
+    display: flex;
+}
+
+.item4 li {
+    margin: 0 20px;
+    margin-bottom: 60px;
+    padding-top: 25px;
+    font-size: 0.9rem;
+}
+
+.item4 li i {
+    flex: 1;
+    max-width: 73px;
+    padding: 0 12px;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.item4 li .content {
+    flex: 3;
+    padding-right: 40px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.item4 li h3 {
+    margin-bottom: 30px;
+}
+
+.item4 li .content span {
+    margin-bottom: 10px;
+}
+
+/* Item5 */
+
+.item5 li {
+    display: flex;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.item5 li i {
+    flex: 1;
+    max-width: 73px;
+    padding: 0 12px;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.item5 li .content {
+    flex: 3;
+    padding-right: 40px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.item5 li h3 {
+    margin-bottom: 20px;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        background-color: #0000ff;
+        grid-template-areas:
+            'goals goals'
+            'scopes scopes'
+            'team team'
+            'primary primary'
+            'timeline timeline';
+        padding: 20px;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item1 ul {
+        padding: 20px 0;
+    }
+
+    .item1 li {
+        display: block;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .item1 li i {
+        padding-left: 0;
+    }
+
+    .item1 .content {
+        text-align: left;
+    }
+
+    .item2 ul {
+        padding-bottom: 60px;
+    }
+
+    .item2 li {
+        display: block;
+        text-align: center;
+    }
+
+    .item2 li .content {
+        text-align: left;
+    }
+
+    .item4 ul {
+        display: inline-block;
+    }
+
+    .item4 li:first-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {}
+
+th: 600px) {}

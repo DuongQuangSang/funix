@@ -1,0 +1,118 @@
+@media screen and (max-width: 700px) {
+    #banner {
+        background-size: cover;
+    }
+
+    #nav-bar .container {
+        display: block;
+        height: auto;
+        padding: 6px 0;
+        padding-left: 20px;
+    }
+
+    #nav-bar .container>* {
+        display: block;
+        text-align: left;
+        border-left: 0;
+        padding: 6px 0;
+    }
+
+    #nav-bar .container .nav-center {
+        display: none;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #target,
+    #personal-info {
+        padding: 30px 15px;
+    }
+
+    #job-info .container {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    section>.container {
+        padding: 30px 20px;
+    }
+
+    #certificate .container h1::before {
+        /* border-top: 1px solid var(--border-gold-color); */
+        display: block;
+        background-color: aqua;
+    }
+
+    #certificate .container .list {
+        display: grid;
+    }
+
+    #certificate .container .list:nth-child(3) {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    #certificate .container .list:nth-child(2) {
+        border-bottom: 0;
+    }
+
+    #certificate .container .item:nth-child(2) {
+        border-left: 0;
+        padding-top: 60px;
+        padding-left: 0;
+    }
+
+    #certificate .container .list #hide {
+        display: none;
+    }
+
+    #certificate .container .item {
+        display: block;
+    }
+
+    #certificate .container .item-img {
+        width: 100%;
+    }
+
+    #project .container__col {
+        grid-template-columns: 1fr;
+    }
+
+    .col__section {
+        position: relative;
+        height: 120px;
+        display: block;
+    }
+
+    .col__section .button {
+        position: absolute;
+        left: 20px;
+        top: 12px;
+    }
+
+    .col__section .list {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+
+    .col__section .list li {
+        height: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .col__section .list span {
+        height: 40px;
+    }
+
+    #footer .container ul {
+        gap: 20px;
+    }
+
+    #footer .container ul li span {
+        display: none;
+    }
+}

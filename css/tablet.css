@@ -1,0 +1,87 @@
+@media screen and (max-width: 1200px) {
+    #banner {
+        height: 300px;
+    }
+
+    #nav-bar .container .nav-center {
+        flex: 0.1;
+    }
+
+    #nav-bar .container .nav-center p {
+        display: none;
+    }
+
+    #nav-bar .container .nav-center span {
+        display: none;
+    }
+
+    #job-info .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #project .container__col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        padding-top: 48px;
+    }
+
+    #certificate .container .item {
+        display: block;
+    }
+
+    #certificate .container .item-img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #certificate .container .item__sub-head {
+        margin-top: 10px;
+    }
+
+    #certificate .container .item:nth-child(2) {
+        border-left: 1px solid var(--border-gold-color);
+        padding-left: 8px;
+    }
+
+    #hide {
+        visibility: hidden;
+    }
+
+    .col__section {
+        height: 60px;
+        padding-left: 0;
+        padding-right: 15px;
+        position: relative;
+    }
+
+    .col__section .button {
+        position: absolute;
+        left: 20px;
+    }
+
+    .col__section .list {
+        display: block;
+        margin-bottom: 0;
+        position: absolute;
+        padding-top: 8px;
+        padding-right: 66px;
+        left: 96px;
+        font-size: 0.8rem;
+    }
+
+    .col__section .list li {
+        height: 15px;
+        padding: 12px 0;
+    }
+
+    .col__section .list li:nth-child(2) {
+        position: absolute;
+    }
+
+    .col__section .list li span {
+        height: 15px;
+    }
+}
